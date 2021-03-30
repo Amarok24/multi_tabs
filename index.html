@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MultiTabs demo</title>
+
+	<style>
+		.container {
+			max-width: 500px;
+			margin: auto;
+			font-size: 18px;
+			line-height: normal;
+		}
+
+		a {
+			color: #a0a0a0;
+			text-decoration: none;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+
+		a.active {
+			color: goldenrod;
+			border-bottom: 4px solid rgb(219, 168, 57);
+		}
+
+		.colors {
+			margin-top: 1em;
+			display: inline-block;
+			width: 170px;
+			height: 30px;
+		}
+
+		.colorRed {
+			background-color: red;
+		}
+
+		.colorGreen {
+			background-color: green;
+		}
+
+		input {
+			background-color: #FFFFFF;
+			border-radius: 18px;
+			border-style: solid;
+			border-width: 2px;
+			padding: 5px 10px;
+			color: #505050;
+			cursor: pointer;
+			border-color: #F0F0F0 #A0A0A0 #A0A0A0 #F0F0F0;
+			outline: none;
+		}
+
+		input.active {
+			border-color: #A0A0A0 #F0F0F0 #F0F0F0 #A0A0A0;
+		}
+
+		section {
+			border: 1px solid goldenrod;
+			padding: 1em;
+			margin-top: 2em;
+		}
+
+		footer {
+			border: 1px solid goldenrod;
+			padding: 1em;
+			margin-top: 3em;
+		}
+	</style>
+
+	<script src="dist/app.js" type="module"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<nav id="navigation">
+			<a href="#" rel="noopener" class="active">Tab 1</a>
+			<a href="#" rel="noopener">Tab 2</a>
+			<a href="#" rel="noopener">Tab 3</a>
+		</nav>
+
+		<section>
+			PAGE 1<br />
+			Lorem ipsum dolor sit amet.
+		</section>
+
+		<section>
+			PAGE 2<br />
+			Vero cum quibusdam fuga mollitia doloribus, illo accusantium perspiciatis at enim
+			laudantium et!
+		</section>
+
+		<section>
+			PAGE 3<br />
+			Architecto doloremque esse nostrum nemo.
+		</section>
+
+
+		<footer>
+
+			<nav id="footerNav">
+				<input type="button" value="red color" class="active" />
+				<input type="button" value="green color" />
+			</nav>
+
+			<div class="colors colorRed">
+				&#160;
+			</div>
+
+			<div class="colors colorGreen">
+				&#160;
+			</div>
+
+		</footer>
+
+
+	</div>
+
+</body>
+
+</html>
