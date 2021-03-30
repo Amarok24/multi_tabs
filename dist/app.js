@@ -7,7 +7,8 @@ if (document.body.clientWidth > 640) {
 }
 new MultiTabs({
     navigation: document.querySelectorAll("#footerNav input"),
-    contentSections: document.querySelectorAll("div.colors")
+    contentSections: document.querySelectorAll("div.colors"),
+    activeCssClass: "selected"
 });
 console.log("init done");
 //# sourceMappingURL=app.js.map
